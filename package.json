@@ -1,0 +1,23 @@
+{
+  "name": "projeto14-mywallet-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroGomes2k/projeto14-mywallet-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroGomes2k/projeto14-mywallet-api/issues"
+  },
+  "homepage": "https://github.com/PedroGomes2k/projeto14-mywallet-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
