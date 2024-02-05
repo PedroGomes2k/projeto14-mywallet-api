@@ -25,30 +25,19 @@ npm install
 
 3. Configurar Banco de Dados:
 
-- Configure o arquivo .env com as informações do seu banco de dados PostgreSQL, ultileze o .env.exemple como exemplo.
+- Configure o arquivo .env com as informações do seu banco de dados MongoDB, ultileze o .env.exemple como exemplo.
 
-4. Rodar as Migrações do Prisma:
 
-```bash
-npx prisma migrate dev
-```
-
-5. Executar o Projeto:
+4. Executar o Projeto:
 
 ```bash
 npm run dev
 ```
 
-6. Executar Testes:
+5. Deploy do Banco de dados
 
 ```bash
-npm run test
-```
-
-7. Deploy do Banco de dados
-
-```bash
-https://driven-apostas.onrender.com
+https://my-wallet-qdve.onrender.com
 ```
 
 #
