@@ -1,15 +1,22 @@
-import express, { json } from "express"
-import cors from "cors"
-import router from "./routes/index.router.js"
+import express, { json } from "express";
+import "express-async-errors";
+import cors from "cors";
+import { routerUser } from "./routers/user-router.js";
+import { routerAuth } from "./routers/auth-router.js";
+import httpStatus from "http-status";
+import errorHandlingMiddleware from "./middlewares/error-middleware.js";
 
-const app = express()
-app.use(cors())
-app.use(express.json())
-app.use(router)
 
-// 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
+const app = express();
 
-const port = process.env.PORT || 5000
-app.listen(port, () => {
-	console.log(`Servidor rodando na porta ${port}`)
-})  
+app
+  .use(cors())
+  .use(express.json())
+  .get("/health", (req, res) => {
+    return res.status(httpStatus.OK).send("It's ok!");
+  })
+  .use(routerUser)
+  .use(routerAuth)
+  .use(errorHandlingMiddleware);
+
+export default app;
